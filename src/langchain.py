@@ -4,6 +4,7 @@ import os
 
 from langchain.agents import create_agent
 from langchain_mcp_adapters.client import MultiServerMCPClient
+from langchain_openai import ChatOpenAI
 
 from src.prompt import SYSTEM_PROMPT
 
@@ -65,7 +66,9 @@ def get_agent():
     tools = asyncio.run(client.get_tools())
 
     # Create production-ready agent
-    agent = create_agent("openai:gpt-5.2", tools=tools, system_prompt=SYSTEM_PROMPT)
+    model = ChatOpenAI(model="gpt-5.1", reasoning={"effort": "medium"})
+
+    agent = create_agent(model, tools=tools, system_prompt=SYSTEM_PROMPT)
 
     return agent
 
