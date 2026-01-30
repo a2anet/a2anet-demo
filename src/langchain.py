@@ -14,16 +14,6 @@ def get_agent():
     A2ANET_API_KEY: str = os.environ["A2ANET_API_KEY"]
 
     A2A_AGENT_CARDS = [
-        # Google Search
-        {
-            "url": "https://a2anet.com/agent/ULHnDRWOeobbGwOfizcB/agent-card.json",
-            "custom_headers": {"X-API-Key": A2ANET_API_KEY},
-        },
-        # Google News
-        {
-            "url": "https://a2anet.com/agent/MefJdV5K9u6HLQNjjpZh/agent-card.json",
-            "custom_headers": {"X-API-Key": A2ANET_API_KEY},
-        },
         # Reddit Search
         {
             "url": "https://a2anet.com/agent/JRHbiNo2kBy1um4z2oSa/agent-card.json",

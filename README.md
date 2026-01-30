@@ -43,7 +43,7 @@ uv run --env-file .env -m src.langchain
 
 ## ⚙️ Configuration
 
-By default the [A2A MCP server](https://github.com/a2anet/a2a-mcp) connects to [Google Search](https://a2anet.com/agent/ULHnDRWOeobbGwOfizcB), [Google News](https://a2anet.com/agent/MefJdV5K9u6HLQNjjpZh), [Reddit Search](https://a2anet.com/agent/JRHbiNo2kBy1um4z2oSa), [Tweet Search](https://a2anet.com/agent/7TaFj4YlbpngypjX74zl), [LinkedIn Profile Search](https://a2anet.com/agent/BpKQrB8yibpOjUGznfBa), [LinkedIn Company Search](https://a2anet.com/agent/kq0rkZgtsj7yaAMpxB02), and [LinkedIn Post Search](https://a2anet.com/agent/TEjZexmB5frVZi52Ne0j).
+By default the [A2A MCP server](https://github.com/a2anet/a2a-mcp) connects to [Reddit Search](https://a2anet.com/agent/JRHbiNo2kBy1um4z2oSa), [Tweet Search](https://a2anet.com/agent/7TaFj4YlbpngypjX74zl), [LinkedIn Profile Search](https://a2anet.com/agent/BpKQrB8yibpOjUGznfBa), [LinkedIn Company Search](https://a2anet.com/agent/kq0rkZgtsj7yaAMpxB02), and [LinkedIn Post Search](https://a2anet.com/agent/TEjZexmB5frVZi52Ne0j).
 
 To add more agents:
 
