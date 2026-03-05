@@ -16,27 +16,27 @@ def get_agent():
     A2A_AGENT_CARDS = [
         # Reddit Search
         {
-            "url": "https://a2anet.com/agent/JRHbiNo2kBy1um4z2oSa/agent-card.json",
+            "url": "https://app.a2anet.com/agent/JRHbiNo2kBy1um4z2oSa/agent-card.json",
             "custom_headers": {"X-API-Key": A2ANET_API_KEY},
         },
         # Tweet Search
         {
-            "url": "https://a2anet.com/agent/7TaFj4YlbpngypjX74zl/agent-card.json",
+            "url": "https://app.a2anet.com/agent/7TaFj4YlbpngypjX74zl/agent-card.json",
             "custom_headers": {"X-API-Key": A2ANET_API_KEY},
         },
         # LinkedIn Profile Search
         {
-            "url": "https://a2anet.com/agent/BpKQrB8yibpOjUGznfBa/agent-card.json",
+            "url": "https://app.a2anet.com/agent/BpKQrB8yibpOjUGznfBa/agent-card.json",
             "custom_headers": {"X-API-Key": A2ANET_API_KEY},
         },
         # LinkedIn Company Search
         {
-            "url": "https://a2anet.com/agent/kq0rkZgtsj7yaAMpxB02/agent-card.json",
+            "url": "https://app.a2anet.com/agent/kq0rkZgtsj7yaAMpxB02/agent-card.json",
             "custom_headers": {"X-API-Key": A2ANET_API_KEY},
         },
         # LinkedIn Post Search
         {
-            "url": "https://a2anet.com/agent/TEjZexmB5frVZi52Ne0j/agent-card.json",
+            "url": "https://app.a2anet.com/agent/TEjZexmB5frVZi52Ne0j/agent-card.json",
             "custom_headers": {"X-API-Key": A2ANET_API_KEY},
         },
     ]
