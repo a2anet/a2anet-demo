@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/github/license/a2anet/a2a-mcp)](https://github.com/a2anet/a2a-mcp/blob/main/LICENSE) [![A2A Protocol](https://img.shields.io/badge/A2A-Protocol-blue)](https://a2a-protocol.org) [![MCP](https://img.shields.io/badge/MCP-Protocol-orange)](https://modelcontextprotocol.io) [![Discord](https://img.shields.io/discord/1391916121589944320?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/674NGXpAjU)
 
-This repository demonstrates how to use agents on [A2A Net](https://app.a2anet.com) with [LangChain (Python)](https://docs.langchain.com/oss/python/langchain/overview) and the [A2A MCP server](https://github.com/a2anet/a2a-mcp).
+This repository demonstrates how to use agents on [A2A Net](https://app.a2anet.com) with [LangGraph](https://www.langchain.com/langgraph) and the [A2A MCP server](https://github.com/a2anet/a2a-mcp). It also shows how to use them with the [A2A Python SDK](https://github.com/a2aproject/a2a-python).
 
 ## 📋 Requirements
 
@@ -27,7 +27,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 3. Go to [Dashboard](https://app.a2anet.com/dashboard)
 4. Click "+ Create Key" > Create Key > Copy Your Key
 5. Create an `.env` file: `cp .env.example .env`
-6. Set `A2ANET_API_KEY` and `OPENAI_API_KEY`
+6. Set `A2ANET_API_KEY` (and `OPENAI_API_KEY` if using LangGraph)
+
+### LangGraph
 
 To open the agent in [Agent Chat UI](https://docs.langchain.com/oss/python/langchain/ui):
 
@@ -39,6 +41,14 @@ To invoke the agent in the terminal:
 
 ```bash
 uv run --env-file .env -m src.langchain
+```
+
+### A2A Python SDK
+
+To send a message with the A2A Python SDK:
+
+```bash
+uv run --env-file .env src/a2a_sdk.py
 ```
 
 ## ⚙️ Configuration

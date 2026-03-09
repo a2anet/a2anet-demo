@@ -52,12 +52,9 @@ def get_agent():
         }
     )
 
-    # Get LangGraph tools
-    tools = asyncio.run(client.get_tools())
-
     # Create production-ready agent
     model = ChatOpenAI(model="gpt-5.1", reasoning={"effort": "medium"})
-
+    tools = asyncio.run(client.get_tools())
     agent = create_agent(model, tools=tools, system_prompt=SYSTEM_PROMPT)
 
     return agent
